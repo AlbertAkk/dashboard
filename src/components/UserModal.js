@@ -19,7 +19,6 @@ const UserModal = ({ isOpen, onClose }) => {
       localStorage.removeItem('userId');
       onClose();
       navigate('/login')
-      console.log("User signed out");
     } catch (error) {
       onClose();
       console.error("Error signing out:", error.message);

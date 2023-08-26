@@ -29,7 +29,6 @@ const Login = () => {
       );
       const user = userCredential.user;
       localStorage.setItem('userId', user.uid);
-      console.log("User signed in:", user);
     } catch (error) {
       console.error("Error signing in:", error.message);
     }

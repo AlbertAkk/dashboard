@@ -31,7 +31,6 @@ const Register = () => {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
       localStorage.setItem('userId', user.uid);
-      console.log('User created:', user);
     } catch (error) {
       console.error('Error creating user:', error.message);
     }
