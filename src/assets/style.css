@@ -1,0 +1,432 @@
+.todoData {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+.todoName{
+  color: #f2f2f2;
+}
+
+.todoBlock {
+  width: 100%;
+  height: 400px;
+  background-color: #332d2d;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.todoWrapper {
+  max-height: 350px;
+  height: 100%;
+  overflow: auto;
+}
+
+.listToDos {
+  padding: 0;
+  margin: 0;
+}
+
+.dashboardItems {
+  width: 100%;
+}
+
+.dashboardBlock {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.dashboardHeading{
+  color: #f2f2f2;
+}
+
+.taskToDoList {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  padding: 0;
+}
+
+.taskToDoItem {
+  list-style: none;
+  height: 150px;
+  margin: 20px;
+  position: relative;
+}
+
+.deleteBtn {
+  font-size: 18px;
+  padding: 10px;
+  position: absolute;
+  color: #f2f2f2;
+  right: 0;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+  background-color: #574848;
+  border-radius: 5px;
+}
+
+.todoInput {
+  max-width: 400px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  padding: 3px 5px;
+}
+
+.itemToDoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.itemTodo {
+  list-style: none;
+  width: 100%;
+  height: 30px;
+  background-color: #574848;
+  color: #f2f2f2;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.doneItem {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.removeToDo {
+  color: #f2f2f2;
+  background: none;
+  border: none;
+}
+
+.removeToDo:hover {
+  color: #574848;
+  cursor: pointer;
+}
+
+.addItemWrapper {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+}
+
+.addBtn {
+  max-width: 80px;
+  width: 100%;
+  background-color: #574848;
+  color: #f2f2f2;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.addBtn:hover {
+  cursor: pointer;
+  background-color: #281c1c;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  width: 100%;
+  background-color: #332d2d;
+  color: #fff;
+}
+
+.userBtn {
+  background: none;
+  border: none;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding-right: 20px;
+  margin-left: 10px;
+}
+
+.userBtn:hover {
+  cursor: pointer;
+  color: #574848;
+}
+
+.dashboard {
+  text-decoration: none;
+  padding-left: 20px;
+  color: #f2f2f2;
+}
+
+.dashboard:hover {
+  color: #574848;
+}
+
+dashboradUsername{
+  color: #f2f2f2;
+}
+
+.personTodo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 150px;
+  color: #f2f2f2;
+  background-color: #332d2d;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.personTodo:hover {
+  background-color: #574848;
+}
+
+.nameToDoItem {
+  text-decoration: none;
+}
+
+.modalWrapper {
+  height: 100%;
+}
+
+.modalDeleteWrapper {
+  height: 100%;
+}
+
+.modalOpenBtn {
+  font-size: 18px;
+  padding: 10px;
+  color: #f2f2f2;
+}
+
+.modalOpenBtn:hover {
+  cursor: pointer;
+  background-color: #332d2d;
+  border-radius: 5px;
+}
+
+.modalClose {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalClBtn {
+  background: none;
+  border: none;
+  padding: 5px;
+  color: #f2f2f2;
+}
+
+.modalClBtn:hover {
+  cursor: pointer;
+  background-color: #574848;
+  border-radius: 5px;
+}
+
+.modalHeadline {
+  padding: 0;
+  margin: 0;
+}
+
+.modalInputWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.modalInput {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #fabdbd;
+  outline: none;
+  padding: 0 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.moadlAddWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.modalAdd {
+  max-width: 70px;
+  width: 100%;
+  height: 30px;
+  background: #574848;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+}
+
+.modalAdd:hover {
+  cursor: pointer;
+  background-color: #281c1c;
+  border: none;
+}
+
+.deleteQuestion {
+  padding: 0;
+  margin: 0;
+}
+
+.modalDeleteWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.deleteQuestionWrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.deleteBtnsWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+.confirmDelete {
+  background-color: rgb(229, 10, 10);
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  max-width: 100px;
+  width: 100%;
+  height: 30px;
+}
+
+.cancelDelete {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  max-width: 100px;
+  width: 100%;
+  height: 30px;
+}
+
+.confirmDelete:hover {
+  cursor: pointer;
+  background-color: rgb(124, 6, 6);
+}
+
+.cancelDelete:hover {
+  cursor: pointer;
+  background-color: #d1cdcd;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginWrapper {
+  max-width: 300px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.loginHeader {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.authFormInput {
+  max-width: 200px;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  outline: none;
+  padding: 5px;
+}
+
+.loginBtnsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginBtn {
+  max-width: 100px;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: #827f7f;
+  border: none;
+  border-radius: 4px;
+}
+
+.loginBtn:hover {
+  cursor: pointer;
+  background-color: #4d4c4c;
+}
+
+.signupLink {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.signupLink:hover {
+  color: #010135;
+}
+
+.userMenu{
+  width: 100%;  
+}
+
+.signout{
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: none;
+  background-color: #332d2d;
+  color: #f2f2f2;
+}
+
+.signout:hover{
+  cursor: pointer;
+  background-color: #574848;
+}
+
+.notFound{
+  margin-top: 80px;
+}
